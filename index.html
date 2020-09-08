@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>сайт bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- =========bootstrap ======= -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+	<!-- =========pretty-checkbox ======= -->
+
+	<link rel="stylesheet" href="фрейм/pretty-checkbox.min.css">
+	<link rel="stylesheet" href="фрейм/bootstrap.min.css">
+	<style>#card-deck{display:none;}</style>
+	<style>#more{display:none;}</style>
+</head>
+<body>
+
+	<!-- =========================================== 
+						Navbar
+		=========================================== -->
+<!-- 	<div class="navbar navbar-inverse navbar-fixed-top navbar-light bg-light">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle"
+				data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">блабла</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<il class="active"><a href="#">Home</a></il>
+				<il><a href="#">Home</a></il>
+				<il><a href="#">Home</a></il>
+				<il><a href="#">Home</a></il>
+				<il><a href="#">Home</a></il>
+			</ul>
+		</div>
+	</div>
+</div>
+<br><br><br><br><br><br>
+ -->
+
+	<!-- =========================================== 
+						coloms
+		=========================================== -->
+<div class="container" id="container">
+
+	<div class="row">
+
+<!-- 	=========================================== 
+						menu
+		=========================================== -->
+
+		<div class="col-lg-3" id="menu">
+			<!-- близость к метро -->
+
+			<button onclick="skit()" type="button" class="btn btn-light  btn-lg btn-block"><h3> Близость к метро <img src="icons/Chevron Right.png" alt=""></h3></button>
+
+			<div class="k_metro" id="k_metro">
+									
+
+				<div class="btn-group-lg btn-group-toggle" data-toggle="buttons" id="btn_dist">
+					<label class="btn btn-danger dist">
+						<input type="checkbox" name="options" id="option1" autocomplete="off"> < 10
+					</label>
+					<label class="btn btn-danger dist">
+						<input type="checkbox" name="options" id="option2" autocomplete="off"> 10-20
+					</label>
+					<label class="btn btn-danger dist">
+						<input type="checkbox" name="options" id="option3" autocomplete="off"> 20-40
+					</label>
+					<label class="btn btn-danger dist">
+						<input type="checkbox" name="options" id="option4" autocomplete="off"> 40+
+					</label>
+				</div>
+
+				<div class="btn-lg btn-toggle" data-toggle="buttons">
+					<label class="btn btn-danger btn-lg btn-block">
+						<input type="radio" name="options" id="option1" autocomplete="off"> Любой
+					</label>
+				</div>
+					
+			</div>
+<!-- срок сдачи -->
+
+			<button onclick="skip()" type="button" class="btn btn-light  btn-lg btn-block"> <h3>Срок сдачи <img src="icons/Chevron Right.png" alt=""></h3></button>
+
+		
+			<div class="tt" id="srok_sdachi">
+				<div class="">
+					<div class="pretty p-default p-round">
+						<input type="radio" name="radio1">
+						<div class="state p-danger">
+							<label> Любой</label>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="">
+					<div class="pretty p-default p-round">
+						<input type="radio" name="radio1">
+						<div class="state p-danger">
+							<label> Сдан</label>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="">
+					<div class="pretty p-default p-round">
+						<input type="radio" name="radio1">
+						<div class="state p-danger">
+							<label>В этом году</label>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="">
+					<div class="pretty p-default p-round">
+						<input type="radio" name="radio1">
+						<div class="state p-danger">
+							<label>В следующем году</label>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- Дополнительные опции -->
+
+			<button onclick="skipp()" type="button" class="btn btn-light  btn-lg btn-block load-more"> <h3>Дополнительные опции <img src="icons/Chevron Right.png" alt=""></h3></button>
+
+
+			<div class="tt" id="dvor">
+				<div class="pretty p-svg p-curve">
+					<input type="checkbox" />
+					<div class="state p-danger">
+						<!-- svg path -->
+						<svg class="svg svg-icon" viewBox="0 0 20 20">
+							<path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+						</svg>
+						<label>Двор без машин</label>
+					</div>
+				</div>
+				</br>
+				</br>
+				<div class="pretty p-svg p-curve">
+					<input type="checkbox" />
+					<div class="state p-danger">
+						<!-- svg path -->
+						<svg class="svg svg-icon" viewBox="0 0 20 20">
+							<path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+						</svg>
+						<label>Высокие потолки</label>
+					</div>
+				</div>
+				</br>
+				</br>
+				<div class="pretty p-svg p-curve">
+					<input type="checkbox" />
+					<div class="state p-danger">
+						<!-- svg path -->
+						<svg class="svg svg-icon" viewBox="0 0 20 20">
+							<path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+						</svg>
+						<label>Есть кладовые</label>
+					</div>
+				</div>
+				</br>
+				</br>
+				<div class="pretty p-svg p-curve">
+					<input type="checkbox" />
+					<div class="state p-danger">
+						<!-- svg path -->
+						<svg class="svg svg-icon" viewBox="0 0 20 20">
+							<path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+						</svg>
+						<label>Панорамные окна</label>
+					</div>
+				</div>
+				</br>
+				</br>
+				<div class="pretty p-svg p-curve">
+					<input type="checkbox" />
+					<div class="state p-danger">
+						<!-- svg path -->
+						<svg class="svg svg-icon" viewBox="0 0 20 20">
+							<path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+						</svg>
+						<label>Малоэтажный (<10 этажей)</label>
+						</div>
+					</div>
+			</div>
+
+			<button type="button" class="btn btn-dangerr  btn-lg btn-block load-more"><h4>Применить фильтры</h4></button>
+
+			<button type="button" class="btn btn-light  btn-lg btn-block load-more" id="sbros_vsego"><h4>Сбросить фильтры</h4></button>
+
+		</div>
+
+	<!-- =========================================== 
+						center
+		=========================================== -->
+
+		<div class="col-lg-9 order-first" id="ror">
+
+			<div class="row rer">
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card">
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"><span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+
+					<!-- =======Пример норм========= -->
+
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card" >
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"><span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+
+				<!-- =======Конец примера========= -->
+
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card" >
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"><span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="row rer">
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card" >
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"><span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card" >
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"> <span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card" >
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"><span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="row rer" id="card-deck">
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card">
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"><span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card">
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"><span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4  col-sm-12 col-xs-12">
+					<div class="card">
+  						<img src="image 9.png" class="card-img-top" alt="...">
+  						<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro"><span class="min">Студенческая 5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div>
+					</div>
+				</div>
+			</div>
+			<!-- ========Пример старого бустрапа======== -->
+			<!-- <div class="row" id="card-deck">
+				<div class="col-4"><div class="card">
+					<img class="card-img-top rounded"  src="image 9.png" alt="Card image cap" style="max-width: 23rem;">
+							<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro">Студенческая <span class="min">5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div></div></div>
+				<div class="col-4"><div class="card">
+					<img class="card-img-top rounded"  src="image 9.png" alt="Card image cap" style="max-width: 23rem;">
+							<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro">Студенческая <span class="min">5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div></div></div>
+				<div class="col-4"><div class="card">
+					<img class="card-img-top rounded"  src="image 9.png" alt="Card image cap" style="max-width: 23rem;">
+							<div class="card-body">
+								<p class="card-title">Расцветай на Маркса</p>
+								<p class="card-text">Срок сдачи до 3 кв. 2022 г.</p>
+								<p class="card-text1"><img src="icons/Vectoor.png" class="metro">Студенческая <span class="min">5 мин.</span> <img src="icons/Vector.png"></p>
+								<p class="card-text2"><small class="text-muted">пр. Карла Маркса, 167/2</small></p>
+							</div></div>
+				</div>
+			</div> -->
+
+			<button onclick="add('flex')" type="button" class="btn btn-light  btn-lg btn-block load-more " id="hide"><img src="icons/Ellipse 40.png" alt="button"><p><h4>Показать еще</h4></p></button>
+
+		</div>
+		
+		
+	</div>
+</div>
+
+	<!-- =========bootstrap ======= -->
+<script src="../../фреймоврки/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script> 
+<script src="../../фреймоврки/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+	<!-- =========bootstrap ======= -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/mint.js"></script>
+</body>
+</html>
